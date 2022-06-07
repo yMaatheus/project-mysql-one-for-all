@@ -10,7 +10,7 @@ CREATE TABLE SpotifyClone.artists(
 CREATE TABLE SpotifyClone.planos(
   plano_id INT NOT NULL AUTO_INCREMENT,
   plano VARCHAR(255) NOT NULL,
-  valor_plano DOUBLE NOT NULL,
+  valor_plano DECIMAL(5, 2) NOT NULL,
   PRIMARY KEY(plano_id)
 );
 
@@ -71,7 +71,7 @@ VALUES
 
 INSERT INTO SpotifyClone.planos(plano_id, plano, valor_plano)
 VALUES
-  (1, 'gratuito', 0),
+  (1, 'gratuito', 0.00),
   (2, 'familiar', 7.99),
   (3, 'universitário', 5.99),
   (4, 'pessoal', 6.99);
